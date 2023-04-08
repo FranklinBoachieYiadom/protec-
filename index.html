@@ -103,7 +103,8 @@
     <div class="w3l-banner-content">
       <div class="container">
         <div class="bannerhny-info text-center">
-          <h3 class="">PROTEC SECURITY SERVICES <br/>~Service with Integrity~</h3>
+          <!-- <h3 class="">PROTEC SECURITY SERVICES <br/>~Service with Integrity~</h3> -->
+          <img src="assets/images/text.png" alt="" class="radius-image img-fluid">
           <!-- <a class="btn btn-style btn-white mt-sm-5 mt-4" href="about.html">
             Read More <span class="fa fa-angle-double-right ml-2" aria-hidden="true"></span></a> -->
         </div>
@@ -120,7 +121,7 @@
           <h6 class="title-subhny mb-2"><span>About Us</span></h6>
           <h3 class="title-w3l mb-3">Company history.</h3>
           <p class="mb-3">Protec Security services is a private security company specialized in providing total security 
-            solutions to its cherished clients. We lay down security measures to ensure clients 
+            solutions to its cherished clients; We lay down security measures to ensure clients 
             do not loose their valuables except against natural disaster.
           </p>
           <p>Our operations have been trusted and proven to stand the test of time, it is designed to cover staff equipment, 
@@ -129,7 +130,10 @@
         </div>
         <div class="col-lg-5 upper-sec-grids-right mt-lg-0 mt-5">
            <h4 class="title-subhny mb-4"><span>Core Values</span></h4>
-
+          <br/>
+           <a class="expand-btn btn-style btn-primary mt-sm-5 mt-4" onclick="toggleContent()"> Show More <span
+            class="fa fa-angle-double-right ml-2" aria-hidden="true"></span></a>
+            <div class="content mt-4">
           <div class="upper-wrap-grid mb-4">
             <div class="upper-icon">
               <span class="fa fa-shield"></span>
@@ -172,6 +176,7 @@
           </div>
         </div>
       </div>
+      </div>
     </div>
   </section>
   <!-- //w3l-upper-sec-->
@@ -179,12 +184,22 @@
     <div class="container py-lg-5 py-md-3">
       <div class="row">
         <div class="col-lg-6">
-          <div class="position-relative">
+          <div class="float-top col-lg-6 col-sm-7 mt-md-6  mt-3">
             <img src="assets/images/g1.jpg" alt="" class="radius-image img-fluid">
           </div>
+          <div class="float-top col-lg-6 col-sm-7 mt-md-6  mt-3">
+            <img src="assets/images/g2.jpg" alt="" class="radius-image img-fluid">
+          </div>
+          <div class="float-top col-lg-6 col-sm-7 mt-md-6  mt-3">
+            <img src="assets/images/g3.jpg" alt="" class="radius-image img-fluid">
+          </div>
+          <!-- <div class="float-top col-lg-4 col-sm-6 mt-md-5  mt-3">
+            <img src="assets/images/g1.jpg" alt="" class="radius-image img-fluid">
+          </div> -->
         </div>
+        
         <div class="col-lg-6 mt-lg-0 mt-5 align-self pl-lg-5">
-          <h6 class="title-subhny mb-2"><span>Our Story</span></h6>
+          <!-- <h6 class="title-subhny mb-2"><span>Our Story</span></h6> -->
           <h3 class="title-w3l mx-0">Ensuring Highest Safety and Protection</h3>
           <p class="mt-md-4 mt-3">With the increasing rate of crime and unrest in our communities, 
             Protec Security Services was established to solve all security related issues to provide 
@@ -218,8 +233,20 @@
             aims to provide highly professional and effective security 
             solutions tailored to meet the needs of all our clients.
           </p>
+
+
           <a class="btn btn-style btn-outline-light mt-sm-5 mt-4 mr-2" href="about.html">
             Read More <span class="fa fa-angle-double-right ml-2" aria-hidden="true"></span></a>
+
+            <!-- <a class="expand-btn btn-style btn-primary mt-sm-5 mt-4" onclick="toggleContent()"> Read More <span
+              class="fa fa-angle-double-right ml-2" aria-hidden="true"></span></a>
+          
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id lacus vitae nibh congue scelerisque. Nulla facilisi. Sed non elit non risus laoreet pharetra. Integer faucibus massa quis libero luctus, in lobortis dolor fringilla.</p>
+            <p>Curabitur vel malesuada arcu. Fusce eget ipsum sit amet nisl rhoncus posuere. Nulla facilisi. Nullam euismod tellus at elementum varius.</p>
+          </div> -->
+          
+          
         </div>
       </div>
     </div>
@@ -277,7 +304,7 @@
             <div class="col-md-5 col-sm-6 footer-list-28 mt-5">
               <h6 class="footer-title-28">Our Services</h6>
               <ul>
-                <li><a href="services.html"><span class="fa fa-angle-double-right mr-2" aria-hidden="true"></span> Co operate 
+                <li><a href="services.html"><span class="fa fa-angle-double-right mr-2" aria-hidden="true"></span> Corperate 
                   Man Guarding</a></li>
                 <li><a href="services.html"><span class="fa fa-angle-double-right mr-2" aria-hidden="true"></span>
                   Residential Man Guarding</a></li>
@@ -414,6 +441,19 @@
         }
       });
     });
+
+    function toggleContent() {
+  var content = document.querySelector('.content');
+  var btn = document.querySelector('.expand-btn'); 
+  // var btn = document.querySelector('.btn');
+  if (content.classList.contains('show')) {
+    content.classList.remove('show');
+    btn.innerHTML = 'Show More';
+  } else {
+    content.classList.add('show');
+    btn.innerHTML = 'Show Less';
+  }
+}
   </script>
   <!--//MENU-JS-->
 

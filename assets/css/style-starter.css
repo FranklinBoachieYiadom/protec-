@@ -712,6 +712,14 @@ pre code {
   }
 }
 
+.content {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
