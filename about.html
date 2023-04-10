@@ -557,6 +557,20 @@
         }
       });
     });
+
+      // This the js code for the drop down of the content to show more
+      function toggleContent() {
+  var content = document.querySelector('.content');
+  var btn = document.querySelector('.expand-btn'); 
+  // var btn = document.querySelector('.btn');
+  if (content.classList.contains('show')) {
+    content.classList.remove('show');
+    btn.innerHTML = 'Show More';
+  } else {
+    content.classList.add('show');
+    btn.innerHTML = 'Show Less';
+  }
+}
   </script>
   <!--//MENU-JS-->
 
