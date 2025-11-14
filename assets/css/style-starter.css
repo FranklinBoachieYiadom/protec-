@@ -716,6 +716,16 @@ pre code {
   display: none;
 }
 
+.content .upper-wrap-grid {
+  margin-bottom: 0.5rem ;
+  padding-bottom: 0;
+}
+
+.upper-info{
+  padding-top: 10px;
+  padding-right: 20px;
+}
+
 .show {
   display: block;
 }
@@ -15114,8 +15124,8 @@ a.navbar-brand img {
 }
 
 .upper-wrap-grid .upper-icon span.fa {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   margin: auto;
   text-align: center;
   background: var(--bg-grey);
